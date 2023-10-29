@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h6 {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+div {
+  width: 800px;
+  height: 600px;
+}
+
+/* left card */
+
+img {
+  float: left;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+/* right card */
+section {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border-radius: 0 30px 30px 0;
+}
+
+h3 {
+  padding: 40px 0 30px 40px;
+  color: rgb(170, 170, 170);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 16px;
+}
+
+h2 {
+  padding: 0 70px 20px 40px;
+  font-size: 40px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p {
+  padding: 0 70px 10px 40px;
+  line-height: 1.8;
+  color: rgb(94, 94, 94);
+  font-size: 18px;
+}
+
+h1 {
+  padding-left: 40px;
+  font-size: 42px;
+  display: inline;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
+
+span {
+  padding: 20px;
+  position: relative;
+  bottom: 15px;
+  color: grey;
+  text-decoration: line-through;
+}
+
+/* for the button */
+
+button {
+  display: block;
+  background-color: hsl(158, 36%, 37%);
+  margin: 40px auto 10px;
+  height: 63px;
+  width: 78%;
+  border: none;
+  border-radius: 5px;
+}
+
+.cart {
+  height: 20px;
+  width: 7%;
+  position: relative;
+  left: 80px;
+}
+
+button h6 {
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+  div {
+    position: absolute;
+    top: 30px;
+    width: 90%;
+  }
+  img {
+    float: none;
+    width: 100%;
+    height: 45%;
+    border-radius: 10px 10px 0 0;
+  }
+  section {
+    float: none;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    height: 430px;
+    position: relative;
+    top: -10px;
+  }
+  h3 {
+    padding: 20px 0 15px 40px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(121, 121, 121);
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 15px;
+  }
+  br {
+    display: none;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  .cart {
+    position: relative;
+    left: -10px;
+  }
+}
