@@ -20,6 +20,7 @@ main {
 div {
   width: 800px;
   height: 600px;
+  transform: scale(0.7);
 }
 
 /* left card */
